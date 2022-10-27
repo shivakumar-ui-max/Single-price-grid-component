@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+
+	--card-bg: hsl(179, 62%, 43%);
+	--yellow: hsl(71, 73%, 54%);
+	--grey: hsl(204, 43%, 93%);
+	--blue-grey: hsl(218, 22%, 67%);
+
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Karla', sans-serif;
+
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--grey);
+	margin: 2rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	border-radius: .625rem;
+	overflow: hidden;
+}
+
+.items {
+	padding: 1.5rem;
+}
+
+.item-1 {
+	background-color: #Fff;
+}
+
+.item-2 {
+	background-color: var(--card-bg);
+}
+
+.item-3 {
+	background-color: hsl(179, 72%, 46%);
+}
+
+.item-1 h1 {
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin: 1rem 0;
+	color: var(--card-bg);
+}
+
+.item-1 h2 {
+	color: var(--yellow);
+	font-size: 1rem;
+	font-weight: 900;
+	margin: 1rem 0;
+}
+
+.item-1 p {
+	color: var(--blue-grey);
+	line-height: 1.5rem;
+	margin: 1rem 0;
+	font-size: .8825rem;
+	font-weight: 400;
+}
+
+.item-2 h3 {
+	color: var(--grey);
+	margin: 1rem 0;
+	font-size: 1.2rem;
+}
+
+.item-2 ul {
+	list-style: none;
+	display: flex;
+	margin-top: 1rem 0;
+	align-items: center;
+
+}
+
+.item-2 h2 {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.item-2 span {
+	margin-left: 1rem;
+	font-size: .9375rem;
+	font-weight: 300;
+	color: var(--grey);
+}
+
+.item-2 p {
+	margin: .625rem 0;
+	color: var(--grey);
+	font-weight: 900;
+}
+
+.item-2 .btn {
+	max-width: 100%;
+	padding: 1rem 7rem;
+	background-color: var(--yellow);
+	border: none;
+	border-radius: .3125rem;
+	color: #fff;
+	font-size: .9375rem;
+	box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.2);
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.item-3 h3 {
+	margin: 1rem 0;
+	color: #fff;
+	font-size: 1.3rem;
+}
+
+.item-3 p {
+	color: var(--grey);
+	font-size: .885rem;
+	max-width: 200px;
+	line-height: 1.3rem;
+}
+
+@media (min-width:600px) and (max-width:1500px) {
+	main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+
+	}
+
+	.item-1 {
+		grid-column: 1/-1;
+
+	}
+
+	.item-1 h1 {
+		font-size: 2rem;
+	}
+
+	.item-1 h2 {
+		font-size: 1.4rem;
+	}
+	.item-1 p {
+		font-size: 1rem;
+		max-width: 33rem;
+
+	}
+}
